@@ -38,8 +38,8 @@ LDFLAGS+=$(patsubst %,-L%, $(LIB_PATH))
 LDFLAGS+=$(patsubst %,-l%, $(LIB_NAMES))
 
 
-SRC= $(wildcard *.c)
-HDR= $(wildcard *.h)
+SRC= $(wildcard apps/*.c)
+HDR= $(wildcard apps/*.h)
 OBJ= $(SRC:.c=.o)
 
 DEBUG_OBJ=$(addprefix $(DEBUG_DIR)/, $(OBJ))
