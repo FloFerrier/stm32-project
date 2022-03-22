@@ -1,0 +1,6 @@
+language: c
+script:
+  - make
+addons:
+  apt:
+    - gcc-arm-none-eabi
