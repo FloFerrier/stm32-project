@@ -3,4 +3,6 @@ script:
   - make
 addons:
   apt:
+    - build-essential
+    - libnewlib-arm-none-eabi
     - gcc-arm-none-eabi
